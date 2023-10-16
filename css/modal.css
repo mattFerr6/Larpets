@@ -1,0 +1,91 @@
+.modal-window {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffffA0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-window.open{
+    display: flex;
+}
+
+.modal {
+    width: 570px;
+    height: 650px;
+    border-radius: 5px;
+    display: grid;
+    justify-content: center;
+    align-content: space-between;
+    box-shadow: 0 5px 20px #A0A0A0;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+
+.close-modal {
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    background-image: url(../img/close.svg);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    right: -420px;
+    top: 7px;
+}
+
+
+.modal-content {
+    display: flex;
+    gap: 70px;
+}
+
+.choice-area h2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-account-type-option {
+    width: 142px;
+    height: 142px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+
+.btn-account-type-option-1 {
+    background-image: url(../img/pet-sitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-account-type-option-2 {
+    background-image: url(../img/tutor.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.btn-account-type-option:hover {
+    background-color: #FF8900;
+    transform: translateY(-10%);
+}
+
+.modal-text {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+}
+
+
+

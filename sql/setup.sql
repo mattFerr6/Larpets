@@ -1,5 +1,7 @@
 CREATE DATABASE IF NOT EXISTS larpets;
 
+USE larpets;
+
 CREATE TABLE IF NOT EXISTS tutores (
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 	nome VARCHAR(255) NOT NULL,
@@ -66,7 +68,7 @@ CREATE TABLE IF NOT EXISTS avaliacoes (
 	id_petsitter INT NOT NULL,
 	id_tutor INT NOT NULL,
 	nota int NOT NULL,
-	comentario VARCHAR(255) NOT NULL
+	comentario VARCHAR(255) NOT NULL,
 	FOREIGN KEY (id_petsitter) REFERENCES petsitters(id),
 	FOREIGN KEY (id_tutor) REFERENCES tutores(id)
 );

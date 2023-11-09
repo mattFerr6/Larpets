@@ -3,7 +3,7 @@ require 'conexao_db.php';
 
 // Pegando variáveis
 $name = $_POST["name"];
-$username = $_POST["email"];
+$email = $_POST["email"];
 $password = $_POST["password"];
 $phone = $_POST["phone"];
 
@@ -11,11 +11,11 @@ $phone = $_POST["phone"];
 $sql = "INSERT INTO tutores VALUES (null, '".$name."', '".$email."', '".$password."', '".$phone."')";
 try {
   if ($conn->query($sql)) {
-      header('location: ../index.php?criou=1');   // Retornando pro index.php com uma variável GET.
+      echo 'criou conta!';   // Retornando pro index.php com uma variável GET.
   }                                               // Exibir pro usuário que a conta foi criada
 } catch(Exception $e) {
   $msgErro = $e->getMessage();
-  header('location: ../index.php?criou=0&msgErro='.$msgErro); // Exibir que ocorreu um erro
+  echo 'erro: '.$msgErro; // Exibir que ocorreu um erro
 }
 
 $conn->close();

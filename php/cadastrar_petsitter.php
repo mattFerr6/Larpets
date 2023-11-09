@@ -8,10 +8,10 @@ $password = $_POST["password"];
 $phone = $_POST["phone"];
 $cpf = $_POST["cpf"];
 $rg = $_POST["rg"];
-$endereco = $_POST["endereco"];
+$address = $_POST["address"];
 
 // Conexão com o banco de dados
-$sql = "INSERT INTO petsitters VALUES (null, '".$name."', '".$email."', '".$password."', '".$phone."', '".$cpf."', '".$rg."', '".$endereco."')";
+$sql = "INSERT INTO petsitters VALUES (null, '".$name."', '".$email."', '".$password."', '".$phone."', '".$cpf."', '".$rg."', '".$address."')";
 try {
   if ($conn->query($sql)) {
       header('location: ../index.php?criou=1');   // Retornando pro index.php com uma variável GET.

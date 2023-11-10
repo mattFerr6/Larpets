@@ -8,3 +8,9 @@ function openModal(){
         }
     })
 }
+
+function closePopup() {
+    // Pegando id da tag
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}

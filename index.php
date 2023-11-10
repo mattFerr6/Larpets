@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700;800&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Red+Hat+Display:ital,wght@0,300;0,400;0,700;1,900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -11,7 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LarPets - login</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
+
+<?php
+    // Verificar se sessão já existe
+    // [...]
+
+    // Teste de popup
+    require "php/popup.php";
+    echo criarPopup("Lorem ipsum", "Lorem ipsum")
+?>
 
 <body>
     <main>
@@ -28,10 +38,10 @@
                         <div class="form-input-container">
                             <h3>Selecione a modalidade de conta:</h3>
                             <select name="modalidade" id="modalidade" style="padding: 5px; font-size: 16px; border-radius: 50px; border-style: none; width:150px; align-self: center;">
-                                <option value="Tutor">Tutor</option>
-                                <option value="Petsitter">Petsitter</option>
+                                <option value="Tutor">Tutor 🐾</option>
+                                <option value="Petsitter">Petsitter 🐶</option>
                             </select>
-                            <input class="form-input" type="email" id="email" name= "email" placeholder="Email">
+                            <input class="form-input" type="text" id="email" name= "email" placeholder="Email">
 
                             <input class="form-input" type="password" id="password" name="password" placeholder="Senha">
                         </div>
@@ -68,7 +78,6 @@
                 <div class="modal-text" >Escolha a modalidade da conta</div>
             </div>
         </div>
-        <script src="script.js"></script>
     </main>
 </body>
 

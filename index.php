@@ -9,18 +9,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LarPets - login</title>
+    <title>Larpets | Login</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
 
 <?php
-    // Verificar se sessão já existe
-    // [...]
-
-    // Teste de popup
+    // Popup
     require "php/popup.php";
-    echo criarPopup("Lorem ipsum", "Lorem ipsum")
+    if (isset($_GET['msg1']) && isset($_GET['msg2'])) {
+        echo criarPopup(urldecode($_GET['msg1']), urldecode($_GET['msg2']));
+    }
 ?>
 
 <body>

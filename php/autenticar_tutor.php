@@ -14,14 +14,15 @@ if ($resultado) {
         $id_do_usuario = $row['id'];
 
         // Iniciando a sessão do usuário
-        //session_start();
-        //$_SESSION['user_id'] = $id_do_usuario;
-        echo "Login bem-sucedido! ID do usuário: $id_do_usuario";
+        session_start();
+        $_SESSION['user_id'] = $id_do_usuario;
+        $_SESSION['user_type'] = 'tutor';
+        header("Location: ../dashboard.php");
     } else {
-        echo "E-mail ou senha incorretos. Tente novamente.";
+        header("Location: ../index.php?msg1=Ocorreu um erro!&msg2=E-mail ou senha incorretos.");
     }
 } else {
-    echo "Erro na consulta ao banco de dados. Por favor, tente novamente.";
+    header("Location: ../index.php?msg1=Ocorreu um erro!&msg2=Erro na consulta com o banco de dados.");
 }
 
 $conn->close();

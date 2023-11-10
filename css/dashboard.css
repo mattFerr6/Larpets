@@ -1,0 +1,47 @@
+@import 'global.css';
+
+header {
+    background-color: #5a3f20;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    filter: invert(1);
+}
+
+nav {
+    padding:25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #5a3f20;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

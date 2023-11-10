@@ -15,7 +15,7 @@ if ($_FILES['foto']['error'] == 0) {
     $nome_foto = strtolower(str_replace(' ', '_', $nome)) . '_' . strtolower($especie) . '_' . time(); // Nome gerado pra foto
 
     // Diretório para salvar as imagens
-    $diretorio_destino = '../fotos/pets/';
+    $diretorio_destino = '../arq/pets/';
 
     // Nome do arquivo
     $nome_arquivo = $nome_foto . '.jpg';

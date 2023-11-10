@@ -24,12 +24,19 @@
             <div class="box-login">
                 <img src="img/larpets-black-icon.svg" alt="">
                 <div class="box-form">
-                    <div class="form-input-container">
-                        <input class="form-input" type="email" placeholder="Email">
+                    <form action="php/verificar_modalidade.php" method="post">
+                        <div class="form-input-container">
+                            <h3>Selecione a modalidade de conta:</h3>
+                            <select name="modalidade" id="modalidade" style="padding: 5px; font-size: 16px; border-radius: 50px; border-style: none; width:150px; align-self: center;">
+                                <option value="Tutor">Tutor</option>
+                                <option value="Petsitter">Petsitter</option>
+                            </select>
+                            <input class="form-input" type="email" id="email" name= "email" placeholder="Email">
 
-                        <input class="form-input" type="password" placeholder="Senha">
-                    </div>
-                    <button class="form-button">Entrar</button>
+                            <input class="form-input" type="password" id="password" name="password" placeholder="Senha">
+                        </div>
+                        <button class="form-button">Entrar</button>
+                    </form>
                     <a class="form-link" href="#">Esqueceu a senha?</a>
                     <div class="form-element">
                         <div class="text-element">Ou</div>

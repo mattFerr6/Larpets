@@ -1,8 +1,9 @@
 <?php
+//Iniciar sessão, verificar se o usuário é tutor e pegar o ID aqui
+
 require 'conexao_db.php';
 
 // Receber dados do formulário
-//$id_tutor = $_POST['id_tutor']; // pegar id na sessão
 $nome = $_POST['nome'];
 $especie = $_POST['especie'];
 $raca = $_POST['raca'];

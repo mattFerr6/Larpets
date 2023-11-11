@@ -57,3 +57,7 @@ Nesse exemplo, aplicação estará disponível em http://localhost:1111.
 
 Durante o desenvolvimento do projeto, a equipe enfrentou desafios em relação à implementação, mesmo buscando outras maneiras para realização total da implementação, tal como trocar de aplicação mobile para web, foi possível apenas realizar as funcionalidades de login e cadastro, dadas as restrições de tempo e conhecimento.
 O código disponível no GitHub reflete o esforço dos membros da equipe, visando valorizar os feedback para orientar projetos futuros e melhorar nosso trabalho.
+
+## Relato de Condução
+
+https://docs.google.com/document/d/13hnPTA5xkjwStmQdUxM2KlMqS72S4X_g5Qr58HwOqsU

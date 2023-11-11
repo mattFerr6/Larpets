@@ -6,9 +6,10 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 $phone = $_POST["phone"];
+$address = $_POST["address"];
 
 // Conexão com o banco de dados
-$sql = "INSERT INTO tutores VALUES (null, '".$name."', '".$email."', '".$password."', '".$phone."')";
+$sql = "INSERT INTO tutores VALUES (null, '".$name."', '".$email."', '".$password."', '".$phone."', '".$address."')";
 
 try {
   if ($conn->query($sql)) {

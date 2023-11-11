@@ -52,6 +52,7 @@ function criarPopup($msg1, $msg2) {
                 <button onclick='closePopup()'>Ok</button>
             </div>
         </div>
+        <script src='script.js' defer></script>
     ";
 }
 ?>

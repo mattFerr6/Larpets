@@ -4,8 +4,8 @@ echo '
         <img src="img/larpets-black-icon.svg">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Perfil</a></li>
+                <li><a href="dashboard.php">Home</a></li>
+                <li><a href="configuracoes.php">Alterar Perfil</a></li>
                 <li><a href="#">Chat</a></li>
                 <li><a href="#">Meus serviços</a></li>
                 <li><a href="#">Procurar Petsitter</a></li>

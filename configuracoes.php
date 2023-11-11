@@ -44,7 +44,7 @@
             <label for="phone">Telefone:</label>
             <input type="text" id="phone" name="phone" placeholder="Seu novo nº de telefone" required>
 
-            <label for="senha">Nova Senha:</label>
+            <label for="password">Nova Senha:</label>
             <input type="password" id="password" name="password" placeholder="Sua nova senha" required>
 
             <label for='address'>Novo Endereço:</label>

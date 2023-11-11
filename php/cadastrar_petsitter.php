@@ -3,7 +3,7 @@ require 'conexao_db.php';
 
 // Pegando variáveis
 $name = $_POST["name"];
-$username = $_POST["email"];
+$email = $_POST["email"];
 $password = $_POST["password"];
 $phone = $_POST["phone"];
 $cpf = $_POST["cpf"];

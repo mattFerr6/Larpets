@@ -56,9 +56,9 @@ CREATE TABLE IF NOT EXISTS servicos_solicitados (
 	id_petsitter INT NOT NULL,
 	id_tutor INT NOT NULL,
 	id_servico INT NOT NULL,
-	data_solicitacao DATE NOT NULL,
+	data_solicitacao DATETIME NOT NULL,
 	status VARCHAR(255) NOT NULL,
-	data_conclusao DATE,
+	data_conclusao DATETIME,
 	FOREIGN KEY (id_petsitter) REFERENCES petsitters(id),
 	FOREIGN KEY (id_tutor) REFERENCES tutores(id),
 	FOREIGN KEY (id_servico) REFERENCES servicos_petsitter(id)
@@ -69,6 +69,7 @@ CREATE TABLE IF NOT EXISTS avaliacoes (
 	id_petsitter INT NOT NULL,
 	id_tutor INT NOT NULL,
 	nota int NOT NULL,
+	data_avaliacao DATETIME NOT NULL,
 	comentario VARCHAR(255) NOT NULL,
 	FOREIGN KEY (id_petsitter) REFERENCES petsitters(id),
 	FOREIGN KEY (id_tutor) REFERENCES tutores(id)

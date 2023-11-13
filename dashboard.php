@@ -31,9 +31,10 @@
 
     <section class="main-content">
         <!-- Conteúdo principal da página vai aqui -->
-        <?php
-            echo "<h2>Olá, usuário ".$user_id."</h2>";
-            echo "<h3>Você é um ".$user_type."</h3>";
+        <?php // Se for tutor, mostre os pets cadastrados
+            if ($user_type == "tutor") {
+                require 'php/mostrar_pets.php';
+            }
         ?>
     </section>
 

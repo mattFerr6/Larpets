@@ -11,7 +11,7 @@
  if ($conn->connect_error) {
    die("Erro de conexão: " . $conn->connect_error);
  }
- echo "Conexão com o banco de dados feita!<br>";
+//echo "Conexão com o banco de dados feita!<br>";
 // Fechar a conexão com o banco de dados quando terminar
 //$mysqli->close();
 ?>
